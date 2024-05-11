@@ -37,11 +37,23 @@ function Courses() {
   console.log("data: ", courseData[0].зорилго);
   return (
     <section className="w-full flex gap-20 px-24 mt-10">
-      <section className="flex flex-col gap-2 w-[40%]">
+      <section className="flex flex-col gap-2 w-[50%]">
         <h2 className="font-bold text-2xl">
           {courseData[0].Монгол_нэр}
           <span>({courseData[0].Хичээлийн_индекс})</span>
         </h2>
+        <div className="flex">
+          {" "}
+          <p class="text-xs">
+            <span class="font-semibold">Багц цаг: </span> 2 |  
+            <span class="font-semibold"> Улирал:</span> Хаврын улирал | 
+            <span class="font-semibold"> Түвшин:</span> Бакалавр | 
+            <span class="font-semibold"> Бүрэлдэхүүн:</span> Семниар
+          </p>
+        </div>
+        <div>
+          <span class="font-semibold"> Багш:</span> Үйтүмэн
+        </div>
         <div className="">
           <p class="font-semibold">Зорилго:</p>
           {courseData[0].зорилго !== null ? (
@@ -68,18 +80,6 @@ function Courses() {
             consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
             pariatur?"
           </span>
-        </div>
-        <div className="flex">
-          {" "}
-          <p>
-            <span class="font-semibold">Багц цаг: </span> 2 |  
-            <span class="font-semibold"> Улирал:</span> Хаврын улирал | 
-            <span class="font-semibold"> Түвшин:</span> Бакалавр | 
-            <span class="font-semibold"> Бүрэлдэхүүн:</span> Семниар
-          </p>
-        </div>
-        <div>
-          <span class="font-semibold"> Багш:</span> Үйтүмэн
         </div>
       </section>
       <section className="w-[50%]">

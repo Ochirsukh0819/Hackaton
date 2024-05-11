@@ -7,7 +7,8 @@
     "email": "21b1num0742@stud.num.edu.mn",
     "password": "password123",
     "studentPoint": 5,
-    "studentMajor": "Програм Хангамж"
+    "studentMajor": "Програм Хангамж",
+    "saveCourses" : ["7771a5844b0b1fac1d64bda37667b9b7", "ae496b29ec212aad1ad85a86656f5c28"]
   },
   {
     "id": "21b1num0743",

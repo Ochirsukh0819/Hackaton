@@ -37,7 +37,7 @@ function Courses() {
   console.log("data: ", courseData[0].зорилго);
   return (
     <section className="w-full flex gap-20 px-24 mt-10">
-      <section className="flex flex-col gap-2 w-[40%]">
+      <section className="flex flex-col gap-2 w-[50%]">
         <h2 className="font-bold text-2xl">
           {courseData[0].Монгол_нэр}
           <span>({courseData[0].Хичээлийн_индекс})</span>
@@ -94,6 +94,7 @@ function Courses() {
           </span>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <div className="flex">
           {" "}
@@ -108,6 +109,8 @@ function Courses() {
           <span class="font-semibold"> Багш:</span> Үйтүмэн
         </div>
 >>>>>>> dc235e5 (Hicheeliin medeelliig haruulah heseg dr jhn css newew. Gehdee open data ingej salangid irehgui bol ene hereggui bolchij magadgui hmm.)
+=======
+>>>>>>> a90ef72 (Sarnaigiin helsn zarim zuiliig edit hiiw.)
       </section>
       <section className="w-[50%]">
         <TabsDemo />

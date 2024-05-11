@@ -2,9 +2,11 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
-import { Button } from "@/components/ui/moving-border";
+import { useRouter } from "next/navigation";
+import { Button } from "@mui/material";
 
 export default function MyCourses() {
+  const router = useRouter();
   const [isSaved, setIsSaved] = useState<boolean>(true);
   const isSessionStorageAvailable =
     typeof window !== "undefined" && window.sessionStorage;
@@ -25,7 +27,13 @@ export default function MyCourses() {
               <p className="items-center">
                 {isSaved ? <FaStar /> : <CiStar />}
               </p>
-              <Button>Хичээл харах</Button>
+              <Button
+                onClick={() => {
+                  router.push(`/courses/${course}`);
+                }}
+              >
+                Хичээл харах
+              </Button>
             </div>
           </li>
         ))}

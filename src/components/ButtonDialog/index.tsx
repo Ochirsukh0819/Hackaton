@@ -1,19 +1,6 @@
 "use client";
 import React from "react";
-import { LuPencil } from "react-icons/lu";
-import { Button } from "../ui/moving-border";
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import Search from "../Search";
-import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { CommandDemo } from "../Command";
 import { AiOutlineSearch } from "react-icons/ai";
 

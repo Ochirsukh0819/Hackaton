@@ -1,11 +1,11 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import ButtonDialog from "@/components/ButtonDialog";
-import ButtonDialog2 from "@/components/ButtonDialogSecond";
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import ButtonDialog from "@/components/ButtonDialog";
+import ButtonDialogSecond from "@/components/ButtonDialogSecond";
 export default function HomePage() {
   const router = useRouter();
   const [animationStep, setAnimationStep] = useState(0);
@@ -13,7 +13,7 @@ export default function HomePage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimationStep((prevStep) => (prevStep === 3 ? 0 : prevStep + 1));
-    }, 1000); // Change the duration to adjust animation speed
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
@@ -27,7 +27,7 @@ export default function HomePage() {
   };
   const onCourse = async () => {
     try {
-      router.push("/course");
+      router.push("/myCourses");
     } catch (error) {
       console.error("Error during login:", error);
     } finally {
@@ -35,9 +35,24 @@ export default function HomePage() {
   };
   return (
     <main>
-      <div className="text-white h-screen flex p-20  mx-0 md:mx-40 justify-around items-center">
-        {/* <div className="text-black font-sans text-lg">Search</div> */}
-        <ButtonDialog></ButtonDialog>
+      <div className="text-white h-auto flex mx-0 md:mx-40 ml:mx-80 my-10 justify-around items-center">
+        <motion.button
+          whileHover={{ scale: 1.3 }}
+          whileTap={{ scale: 0.7 }}
+          className=""
+          onClick={onSearch}
+          animate={{ scale: [0, 1, 0.5, 1] }}
+          transition={{ times: [0, 1.1, 2.9, 4] }}
+        >
+          <Image
+            src="/2.png"
+            alt="Vercel Logo"
+            width={150}
+            height={150}
+            priority
+          />
+          <ButtonDialog />
+        </motion.button>
         <motion.div
           animate={{ scale: [0, 1, 0.5, 1] }}
           transition={{ times: [0, 1.1, 2.9, 4] }}
@@ -50,8 +65,23 @@ export default function HomePage() {
             priority
           />
         </motion.div>
-        <ButtonDialog2></ButtonDialog2>
-        {/* <div className="text-black font-sans text-lg">My lessons</div> */}
+        <motion.button
+          whileHover={{ scale: 1.3 }}
+          whileTap={{ scale: 0.7 }}
+          className=""
+          onClick={onCourse}
+          animate={{ scale: [0, 1, 0.5, 1] }}
+          transition={{ times: [0, 1.1, 2.9, 4] }}
+        >
+          <Image
+            src="/1.png"
+            alt="Vercel Logo"
+            width={150}
+            height={150}
+            priority
+          />
+          <ButtonDialogSecond />
+        </motion.button>
       </div>
     </main>
   );

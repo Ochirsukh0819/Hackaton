@@ -33,7 +33,7 @@ export default function HomePage() {
   };
   return (
     <main>
-      <div className="text-white h-screen flex mx-0 md:mx-40 justify-around items-center">
+      <div className="text-white h-auto flex mx-0 md:mx-40 ml:mx-80 my-10 justify-around items-center">
         <motion.button
           whileHover={{ scale: 1.3 }}
           whileTap={{ scale: 0.7 }}
@@ -57,8 +57,8 @@ export default function HomePage() {
           <Image
             src="/3.png"
             alt="Vercel Logo"
-            width={500}
-            height={500}
+            width={650}
+            height={650}
             priority
           />
         </motion.div>

@@ -50,9 +50,9 @@ function Courses() {
             <p>Мэдээлэл байхгүй</p>
           )}
         </div>
-        <div>
+        <div class="text-justify">
           <span class="font-semibold">Агуулга: </span>
-          <span class="text-justify">
+          <span>
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae

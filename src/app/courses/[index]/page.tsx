@@ -37,13 +37,13 @@ function Courses() {
   console.log("data: ", courseData[0].зорилго);
   return (
     <section className="w-full flex gap-20 px-24 mt-10">
-      <section className="flex flex-col gap-2 w-[50%]">
+      <section className="flex flex-col gap-2 w-[40%]">
         <h2 className="font-bold text-2xl">
           {courseData[0].Монгол_нэр}
           <span>({courseData[0].Хичээлийн_индекс})</span>
         </h2>
         <div className="">
-          <p>Зорилго:</p>
+          <p class="font-semibold">Зорилго:</p>
           {courseData[0].зорилго !== null ? (
             <p>{courseData[0].зорилго}</p>
           ) : (
@@ -51,8 +51,8 @@ function Courses() {
           )}
         </div>
         <div>
-          <p>Агуулга:</p>
-          <p>
+          <span class="font-semibold">Агуулга: </span>
+          <span class="text-justify">
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -67,14 +67,20 @@ function Courses() {
             reprehenderit qui in ea voluptate velit esse quam nihil molestiae
             consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
             pariatur?"
-          </p>
+          </span>
         </div>
         <div className="flex">
           {" "}
-          багц цаг: 2 | Улирал: Хаврын улирал | Түвшин: Бакалавр | бүрэлдэхүүн:
-          Семниар
+          <p>
+            <span class="font-semibold">Багц цаг: </span> 2 |  
+            <span class="font-semibold"> Улирал:</span> Хаврын улирал | 
+            <span class="font-semibold"> Түвшин:</span> Бакалавр | 
+            <span class="font-semibold"> Бүрэлдэхүүн:</span> Семниар
+          </p>
         </div>
-        <div>Багш: Үйтүмэн</div>
+        <div>
+          <span class="font-semibold"> Багш:</span> Үйтүмэн
+        </div>
       </section>
       <section className="w-[50%]">
         <TabsDemo />

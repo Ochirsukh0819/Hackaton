@@ -1,0 +1,49 @@
+{
+  "user": [
+  {
+    "id": "21b1num0742",
+    "firstName": "Содбилэг",
+    "lastName": "Доржбаяр",
+    "email": "21b1num0742@stud.num.edu.mn",
+    "password": "password123",
+    "studentPoint": 5,
+    "studentMajor": "Програм Хангамж"
+  },
+  {
+    "id": "21b1num0743",
+    "firstName": "Сарнай",
+    "lastName": "Сарнай",
+    "studentEmail": "emma@example.com",
+    "password": "securepassword",
+    "studentPoint": 7,
+    "studentMajor": "Програм Хангамж"
+  },
+  {
+    "id": "21b1num0744",
+    "firstName": "Оюун-Эрдэнэ",
+    "lastName": "Сарнай",
+    "studentEmail": "michael@example.com",
+    "password": "123456",
+    "studentPoint": 8,
+    "studentMajor": "Програм Хангамж"
+  },
+  {
+    "id": "21b1num0745",
+    "firstName": "Очирсүх",
+    "lastName": "Сарнай",
+    "studentEmail": "sophia@example.com",
+    "password": "password1234",
+    "studentPoint": 6,
+    "studentMajor": "Програм Хангамж"
+  },
+  {
+    "id": "21b1num0746",
+    "firstName": "Цагаадай",
+    "lastName": "Сарнай",
+    "studentEmail": "matthew@example.com",
+    "password": "password",
+    "studentPoint": 9,
+    "studentMajor": "Програм Хангамж"
+  }
+]
+}

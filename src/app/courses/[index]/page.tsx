@@ -63,6 +63,7 @@ function Courses() {
           )}
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="text-justify">
           <span class="font-semibold">Агуулга: </span>
           <span>
@@ -71,6 +72,11 @@ function Courses() {
           <span class="font-semibold">Агуулга: </span>
           <span class="text-justify">
 >>>>>>> dc235e5 (Hicheeliin medeelliig haruulah heseg dr jhn css newew. Gehdee open data ingej salangid irehgui bol ene hereggui bolchij magadgui hmm.)
+=======
+        <div class="text-justify">
+          <span class="font-semibold">Агуулга: </span>
+          <span>
+>>>>>>> 0f50087 (Zugeer l ingej haragdwal goy gsnere hiile. End text justify edit hiiw.)
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae

@@ -37,7 +37,7 @@ function Courses() {
   console.log("data: ", courseData[0].зорилго);
   return (
     <section className="w-full flex gap-20 px-24 mt-10">
-      <section className="flex flex-col gap-2 w-[50%]">
+      <section className="flex flex-col gap-2 w-[40%]">
         <h2 className="font-bold text-2xl">
           {courseData[0].Монгол_нэр}
           <span>({courseData[0].Хичээлийн_индекс})</span>
@@ -62,9 +62,15 @@ function Courses() {
             <p>Мэдээлэл байхгүй</p>
           )}
         </div>
+<<<<<<< HEAD
         <div class="text-justify">
           <span class="font-semibold">Агуулга: </span>
           <span>
+=======
+        <div>
+          <span class="font-semibold">Агуулга: </span>
+          <span class="text-justify">
+>>>>>>> dc235e5 (Hicheeliin medeelliig haruulah heseg dr jhn css newew. Gehdee open data ingej salangid irehgui bol ene hereggui bolchij magadgui hmm.)
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -79,8 +85,23 @@ function Courses() {
             reprehenderit qui in ea voluptate velit esse quam nihil molestiae
             consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
             pariatur?"
+          </span>
+        </div>
+<<<<<<< HEAD
+=======
+        <div className="flex">
+          {" "}
+          <p>
+            <span class="font-semibold">Багц цаг: </span> 2 |  
+            <span class="font-semibold"> Улирал:</span> Хаврын улирал | 
+            <span class="font-semibold"> Түвшин:</span> Бакалавр | 
+            <span class="font-semibold"> Бүрэлдэхүүн:</span> Семниар
           </p>
         </div>
+        <div>
+          <span class="font-semibold"> Багш:</span> Үйтүмэн
+        </div>
+>>>>>>> dc235e5 (Hicheeliin medeelliig haruulah heseg dr jhn css newew. Gehdee open data ingej salangid irehgui bol ene hereggui bolchij magadgui hmm.)
       </section>
       <section className="w-[50%]">
         <TabsDemo />

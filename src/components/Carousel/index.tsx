@@ -8,6 +8,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
+import { BackgroundGradient } from "../ui/background-gradient";
 import { Button } from "@mui/material";
 
 export function CarouselSpacing() {
@@ -34,8 +36,11 @@ export function CarouselSpacing() {
                       rate="90%"
                     />
                   ) : (
+                    <section className="w-auto flex gap-4 cursor-pointer">
+                      <section className="flex flex-col gap-2">
+                        <BackgroundGradient className="w-full relative flex flex-col rounded-[12px]  bg-white dark:bg-zinc-900">
                     <Button>
-                      <label htmlFor="file-upload">Лекц нэмэх</label>
+                      <label htmlFor="file-upload" className="px-10 w-[120px] h-[160px] items-center justify-center content-center text-3xl">+</label>
                       <input
                         type="file"
                         id="file-upload"
@@ -44,6 +49,9 @@ export function CarouselSpacing() {
                         style={{ display: "none" }}
                       />
                     </Button>
+                      </BackgroundGradient>
+                    </section>
+                    </section>
                   )}
                 </CarouselItem>
               ))}

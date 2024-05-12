@@ -5,7 +5,7 @@ import { CiStar } from "react-icons/ci";
 import { Button } from "@mui/material";
 import { useRouter } from "next/navigation";
 
-export default function MyCourses() {
+export default function Search() {
   const router = useRouter();
   const [isSaved, setIsSaved] = useState<boolean>(true);
   const isSessionStorageAvailable =

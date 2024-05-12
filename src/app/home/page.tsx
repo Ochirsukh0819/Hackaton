@@ -60,8 +60,8 @@ export default function HomePage() {
           <Image
             src="/3.png"
             alt="Vercel Logo"
-            width={650}
-            height={650}
+            width={700}
+            height={700}
             priority
           />
         </motion.div>

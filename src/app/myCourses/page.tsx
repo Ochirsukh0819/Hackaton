@@ -15,25 +15,23 @@ export default function MyCourses() {
     : [];
 
   return (
-    <section className="w-full flex items-center gap-20 px-24 mt-10">
-      <ul className="w-1/2 p-2">
+    <section className="w-full flex items-center justify-center px-8 mt-10">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {savedCourses.map((course: string, index: number) => (
-          <li key={index} className="text-xl flex  items-center">
-            <div className="flex flex-col pr-20">
-              <p>Веб аппликейшн (ICS302)</p>
-              <p>2 лекц, 2 асуулт</p>
-            </div>
-            <div onClick={() => setIsSaved(!isSaved)}>
-              <p className="items-center">
-                {isSaved ? <FaStar /> : <CiStar />}
-              </p>
-              <Button
-                onClick={() => {
-                  router.push(`/courses/${course}`);
-                }}
-              >
-                Хичээл харах
-              </Button>
+          <li key={index} className="bg-white rounded-lg shadow-md p-6">
+            <div className="flex flex-col justify-between h-full">
+              <div>
+                <h2 className="text-xl font-semibold mb-4">Веб аппликейшн (ICS302)</h2>
+                <p className="text-sm text-gray-600 mb-2">2 лекц, 2 асуулт</p>
+              </div>
+              <div className="flex items-center justify-between mt-4">
+                <button className="flex items-center text-yellow-500">
+                  {isSaved ? <FaStar /> : <CiStar />}
+                </button>
+                <Button onClick={() => router.push(`/courses/${course}`)}>
+                  Хичээл харах
+                </Button>
+              </div>
             </div>
           </li>
         ))}

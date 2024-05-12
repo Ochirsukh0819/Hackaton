@@ -1,13 +1,12 @@
 "use client";
+
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import ButtonDialog from "@/components/ButtonDialog";
 import ButtonDialog2 from "@/components/ButtonDialogSecond";
-
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import ButtonDialog from "@/components/ButtonDialog";
-import ButtonDialogSecond from "@/components/ButtonDialogSecond";
+import { useState, useEffect } from 'react';
+
 export default function HomePage() {
   const router = useRouter();
   const [animationStep, setAnimationStep] = useState(0);

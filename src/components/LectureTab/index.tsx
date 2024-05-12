@@ -54,7 +54,7 @@ export default function LectureTab() {
           flexGrow: 1,
           bgcolor: "background.paper",
           display: "flex",
-          height: 290,
+          height: 350,
         }}
       >
         <Tabs

@@ -21,7 +21,7 @@ export function CarouselSpacing() {
     console.log(file);
   };
   return (
-    <div className="w-[520px] flex  flex-col  ml-6 ">
+    <div className="w-[520px] flex ml-10 flex-col">
       <div className="flex flex-col">
         <>
           <Carousel className="w-[95%] ">

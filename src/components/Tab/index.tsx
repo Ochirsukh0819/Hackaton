@@ -30,7 +30,7 @@ export function TabsDemo() {
   return (
     <>
       <Tabs defaultValue="account" className="w-[700px]">
-        <TabsList className="grid w-full grid-cols-2">
+        <TabsList className="grid w-full grid-cols-2 ">
           <TabsTrigger value="account">Лекцийн тэмдэглэл</TabsTrigger>
           <TabsTrigger value="password">QUIZ</TabsTrigger>
         </TabsList>

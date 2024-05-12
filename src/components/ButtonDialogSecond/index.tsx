@@ -16,8 +16,14 @@ import Search from "../Search";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { CommandDemo } from "../Command";
 import { AiOutlineSearch, AiOutlineStar } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 function ButtonDialog2() {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/Courses');
+  };
   return (
     <section>
       <Dialog>
@@ -31,7 +37,6 @@ function ButtonDialog2() {
             </div>
           </button>
         </DialogTrigger>
-        
       </Dialog>
     </section>
   );

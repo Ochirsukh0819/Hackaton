@@ -6,6 +6,7 @@ import ButtonDialog2 from "@/components/ButtonDialogSecond";
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import ButtonDialogSecond from "@/components/ButtonDialogSecond";
 export default function HomePage() {
   const router = useRouter();
   const [animationStep, setAnimationStep] = useState(0);
@@ -76,14 +77,14 @@ export default function HomePage() {
         </motion.div>
         <div className="ms-12">
           <Image
-            src="/image1.png"
+            src="/image2.png"
             alt="Vercel Logo"
             width={225}
             height={150}
             priority
             className="w-600 h-600 pt-12"
           />
-          <ButtonDialog />
+          <ButtonDialogSecond />
         </div>
       </div>
     </main>

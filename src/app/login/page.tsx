@@ -37,6 +37,10 @@ export default function LoginPage() {
             toast.success("Success");
             console.log(foundUser);
             sessionStorage.setItem("email", email);
+            sessionStorage.setItem(
+              "saveCourses",
+              JSON.stringify(foundUser.saveCourses)
+            );
             router.push("/home");
           } else {
             toast.error("Please Enter valid credentials");

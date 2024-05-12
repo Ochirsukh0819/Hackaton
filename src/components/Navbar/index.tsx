@@ -46,12 +46,12 @@ export default function Navbar() {
                         : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     } px-1 pt-1 text-sm font-medium`}
                   >
-                   Нүүр хуудас
+                    Нүүр хуудас
                   </a>
                   <a
-                    href="/search"
+                    href="/myCourses"
                     className={`inline-flex items-center border-b-2 ${
-                      window.location.pathname === "/search"
+                      window.location.pathname === "/myCourses"
                         ? "border-indigo-500 text-indigo-500"
                         : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     } px-1 pt-1 text-sm font-medium`}
@@ -157,9 +157,9 @@ export default function Navbar() {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href=""
+                href="/myCources"
                 className={`block border-l-4 border-transparent ${
-                  window.location.pathname === "/search"
+                  window.location.pathname === "/myCources"
                     ? "border-indigo-500 text-indigo-500"
                     : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
                 }

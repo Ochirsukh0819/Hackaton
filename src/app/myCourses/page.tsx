@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
-import { Button } from "@mui/material";
 import { useRouter } from "next/navigation";
+import { Button } from "@mui/material";
 
 export default function MyCourses() {
   const router = useRouter();

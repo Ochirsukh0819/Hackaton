@@ -4,6 +4,8 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import ButtonDialog from "@/components/ButtonDialog";
+import ButtonDialogSecond from "@/components/ButtonDialogSecond";
 export default function HomePage() {
   const router = useRouter();
   const [animationStep, setAnimationStep] = useState(0);
@@ -11,7 +13,7 @@ export default function HomePage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimationStep((prevStep) => (prevStep === 3 ? 0 : prevStep + 1));
-    }, 1000); // Change the duration to adjust animation speed
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
@@ -25,7 +27,7 @@ export default function HomePage() {
   };
   const onCourse = async () => {
     try {
-      router.push("/course");
+      router.push("/myCourses");
     } catch (error) {
       console.error("Error during login:", error);
     } finally {
@@ -49,6 +51,7 @@ export default function HomePage() {
             height={150}
             priority
           />
+          <ButtonDialog />
         </motion.button>
         <motion.div
           animate={{ scale: [0, 1, 0.5, 1] }}
@@ -77,6 +80,7 @@ export default function HomePage() {
             height={150}
             priority
           />
+          <ButtonDialogSecond />
         </motion.button>
       </div>
     </main>

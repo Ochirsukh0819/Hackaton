@@ -1,7 +1,21 @@
 "use client";
 import React from "react";
-import { Dialog, DialogTrigger } from "@/components/ui/dialog";
-import { AiOutlineStar } from "react-icons/ai";
+import { LuPencil } from "react-icons/lu";
+import { Button } from "../ui/moving-border";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import Search from "../Search";
+import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import { CommandDemo } from "../Command";
+import { AiOutlineSearch, AiOutlineStar } from "react-icons/ai";
 
 function ButtonDialog2() {
   return (
@@ -17,6 +31,7 @@ function ButtonDialog2() {
             </div>
           </button>
         </DialogTrigger>
+        
       </Dialog>
     </section>
   );
